@@ -1,0 +1,99 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #777777;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+header {
+  padding: 16px;
+  background-color: var(--white);
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+}
+
+header ul li a {
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+#carousel {
+  height: 100vh;
+  background-image: url(./images/carousel-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+
+  position: relative;
+}
+
+#carousel .title {
+  background-color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 16px 24px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#carousel .title h1 {
+  letter-spacing: 12px;
+  margin-right: -12px;
+  text-align: right;
+}
+
+.search {
+  color: var(--black);
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#introduction .container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+#introduction h1, #introduction h2{
+    text-align: center;
+}
+
+
+
+#introduction .row-2 .image {
+    text-align: center;
+    float: left;
+    width: 50%;
+    padding-right: 24px;
+}
+
+#introduction .row-2 .website-introduction {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#introduction .row-2 .image{
+    float: left;
+    width: 50%;
+}
