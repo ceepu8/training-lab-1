@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -45,12 +51,13 @@
         <h1>My website logo</h1>
       </div>
     </section>
-    <section id="introduction">
+
+    <section id="about">
       <div class="container">
-        <div class="row-1">
-          <h1>ABOUT ME</h1>
-          <h2>I love photography</h2>
-          <p class="hobbies">
+        <div class="about__me">
+          <h1 class="about__me__title">ABOUT ME</h1>
+          <h4 class="about__me__subtitle"><i>I love photography</i></h4>
+          <p class="about__me__hobbies">
             We have created a fictional "personal" website/blog, and our
             fictional character is a hobby photographer. Lorem ipsum dolor sit
             amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -66,12 +73,17 @@
           </p>
         </div>
 
-        <div class="row-2">
-          <div class="image">
-            <p><i class="fa-solid fa-user"></i> My Name</p>
-            <img alt="image" src="./images/intro-image.jpeg" />
+        <div class="about__website">
+          <div class="about__website--image">
+            <span
+              ><i style="margin-bottom: 32px" class="fa-solid fa-user"></i> My
+              Name</span
+            >
+            <div class="img">
+              <img alt="image" src="./images/intro-image.jpeg" />
+            </div>
           </div>
-          <div class="website-introduction">
+          <div class="about__website--introduction">
             Welcome to my website. I am lorem ipsum consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -85,6 +97,47 @@
             consequat.
           </div>
           <div style="clear: both"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="strength">
+      <div class="container">
+        <h1 class="strength__title">Im really good at:</h1>
+        <div class="strength__list">
+          <div class="strength__list-item">
+            <div class="strength__list-item__header">
+              <i class="fa-solid fa-camera"></i>
+              <h2>Photograph</h2>
+            </div>
+            <div class="strength__skill-bar__item item-1">
+              <div class="strength__skill-bar__item--overlay overlay-1">
+                95%
+              </div>
+            </div>
+          </div>
+          <div class="strength__list-item">
+            <div class="strength__list-item__header">
+              <i class="fa-solid fa-laptop"></i>
+              <h2>Web Design</h2>
+            </div>
+            <div class="strength__skill-bar__item">
+              <div class="strength__skill-bar__item--overlay overlay-2">
+                85%
+              </div>
+            </div>
+          </div>
+          <div class="strength__list-item">
+            <div class="strength__list-item__header">
+              <i class="fa-solid fa-image"></i>
+              <h2>Photoshop</h2>
+            </div>
+            <div class="strength__skill-bar__item">
+              <div class="strength__skill-bar__item--overlay overlay-3">
+                75%
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

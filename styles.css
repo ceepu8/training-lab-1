@@ -2,9 +2,11 @@
   --white: #ffffff;
   --black: #000000;
   --gray: #777777;
+  --light-gray: #f1f1f1;
 }
 
 * {
+  font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -15,8 +17,13 @@ a {
   text-decoration: none;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 header {
@@ -69,31 +76,104 @@ header ul li a {
   transform: translateY(-50%);
 }
 
-#introduction .container {
-  max-width: 980px;
-  margin: 0 auto;
+#about {
+  color: var(--gray);
+  margin-top: 48px;
+  line-height: 28px;
 }
 
-#introduction h1, #introduction h2{
-    text-align: center;
+#about h1,
+#about h4 {
+  text-align: center;
+  margin-bottom: 24px;
 }
 
-
-
-#introduction .row-2 .image {
-    text-align: center;
-    float: left;
-    width: 50%;
-    padding-right: 24px;
+#about .about__me {
+  margin-bottom: 48px;
 }
 
-#introduction .row-2 .website-introduction {
-    float: left;
-    width: 50%;
-    height: 100%;
+#about .about__website .about__website--image {
+  text-align: center;
+  float: left;
+  width: 50%;
+  padding-right: 48px;
+  padding-left: 32px;
 }
 
-#introduction .row-2 .image{
-    float: left;
-    width: 50%;
+#about .about__website .about__website--image img {
+  opacity: 0.75;
+  border-radius: 4px;
+}
+
+#about .about__website .about__website--image:hover img {
+  opacity: 1;
+}
+
+#about .about__website .about__website--image {
+  float: left;
+  width: 50%;
+}
+
+#about .about__website .about__website--introduction {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#strength {
+  margin-top: 48px;
+}
+
+.strength__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0px;
+}
+
+.strength__title {
+  font-size: 18px;
+  color: var(--gray);
+  font-weight: 400;
+  text-align: center;
+}
+
+.strength__list-item__header {
+  display: flex;
+  align-items: center;
+  gap: 0px 12px;
+  color: var(--gray);
+  margin-bottom: 12px;
+}
+
+.strength__list-item__header h2 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+.strength__skill-bar__item {
+  width: 100%;
+  height: 32px;
+  background-color: var(--light-gray);
+}
+
+.strength__skill-bar__item--overlay {
+  background-color: var(--gray);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+.strength__skill-bar__item--overlay.overlay-1 {
+  width: 90%;
+}
+
+.strength__skill-bar__item--overlay.overlay-2 {
+  width: 85%;
+}
+
+.strength__skill-bar__item--overlay.overlay-3 {
+  width: 75%;
 }
