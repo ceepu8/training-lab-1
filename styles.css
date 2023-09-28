@@ -2,6 +2,7 @@
   --white: #ffffff;
   --black: #000000;
   --gray: #777777;
+  --dark-gray: #616161;
   --light-gray: #f1f1f1;
 }
 
@@ -45,6 +46,7 @@ header ul li a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   opacity: 0.75;
 
   position: relative;
@@ -125,9 +127,6 @@ header ul li a {
 }
 
 .strength__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px 0px;
 }
 
 .strength__title {
@@ -158,12 +157,14 @@ header ul li a {
 }
 
 .strength__skill-bar__item--overlay {
-  background-color: var(--gray);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--dark-gray);
   color: var(--white);
+  height: 100%;
+}
+
+.skill-bar__number {
+  height: 100%;
+  line-height: 100%;
 }
 
 .strength__skill-bar__item--overlay.overlay-1 {
@@ -176,4 +177,57 @@ header ul li a {
 
 .strength__skill-bar__item--overlay.overlay-3 {
   width: 75%;
+}
+
+#statistic {
+  margin-top: 48px;
+}
+
+.statistic__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--dark-gray);
+  color: var(--white);
+  padding: 32px 0;
+}
+
+.statistic__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px 0;
+  text-align: center;
+  flex: 1;
+}
+
+.statistic__list-item__number {
+  font-size: 28px;
+}
+
+#portfolio {
+  background-image: url(./images/portfolio-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+
+  min-height: 400px;
+  height: 50vh;
+
+  position: relative;
+}
+
+#portfolio h1 {
+  font-size: 36px;
+  letter-spacing: 12px;
+
+  color: var(--white);
+  font-weight: 400;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
