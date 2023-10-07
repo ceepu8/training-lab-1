@@ -21,42 +21,40 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <ul>
-        <li style="display: inline-block; padding-right: 24px">
+    <header id="header" class="header">
+      <ul class="header__list">
+        <li class="header__list-item">
           <a href="#"><span>Home</span></a>
         </li>
-        <li style="display: inline-block; padding-right: 24px">
+        <li class="header__list-item">
           <a href="#"> <i class="fa-solid fa-user"></i> <span>About</span></a>
         </li>
-        <li style="display: inline-block; padding-right: 24px">
+        <li class="header__list-item">
           <a href="#">
             <i class="fa-solid fa-table-cells"></i>
             <span>Portfolio</span></a
           >
         </li>
-        <li style="display: inline-block; padding-right: 24px">
+        <li class="header__list-item">
           <a href="#">
             <i class="fa-solid fa-envelope"></i>
             <span>Contact</span></a
           >
         </li>
       </ul>
-      <div class="search">
+      <a href="#" class="header__search">
         <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
+      </a>
     </header>
     <section id="carousel">
-      <div class="title">
-        <h1>My website logo</h1>
-      </div>
+      <h1 class="carousel__title">My website logo</h1>
     </section>
 
     <section id="about">
       <div class="container">
         <div class="about__me">
-          <h1 class="about__me__title">ABOUT ME</h1>
-          <h4 class="about__me__subtitle"><i>I love photography</i></h4>
+          <h1 class="about__heading">ABOUT ME</h1>
+          <p class="about__sub-heading"><em>I love photography</em></p>
           <p class="about__me__hobbies">
             We have created a fictional "personal" website/blog, and our
             fictional character is a hobby photographer. Lorem ipsum dolor sit
@@ -72,66 +70,58 @@
             ea commodo consequat.
           </p>
         </div>
-
         <div class="about__website">
-          <div class="about__website--image">
-            <span
-              ><i style="margin-bottom: 32px" class="fa-solid fa-user"></i> My
-              Name</span
-            >
-            <div class="img">
-              <img alt="image" src="./images/intro-image.jpeg" />
-            </div>
+          <div class="about__website__image">
+            <p><i class="fa-solid fa-user"></i> My Name</p>
+            <br />
+            <img alt="image" src="./images/intro-image.jpeg" />
           </div>
-          <div class="about__website--introduction">
-            Welcome to my website. I am lorem ipsum consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+          <div class="about__website__introduction">
+            <p>
+              Welcome to my website. I am lorem ipsum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
           </div>
           <div style="clear: both"></div>
         </div>
-      </div>
-    </section>
-
-    <section id="strength">
-      <div class="container">
-        <h1 class="strength__title">Im really good at:</h1>
-        <div class="strength__list">
-          <div class="strength__list-item">
-            <div class="strength__list-item__header">
+        <p class="about__strength__title">Im really good at:</p>
+        <div class="about__strength__list">
+          <div class="strength__item">
+            <p class="strength__item__header">
               <i class="fa-solid fa-camera"></i>
-              <h2>Photograph</h2>
-            </div>
+              <span>Photography</span>
+            </p>
             <div class="strength__skill-bar__item item-1">
               <div class="strength__skill-bar__item--overlay overlay-1">
-                <span class="skill-bar__number"> 95% </span>
+                <span class="skill-bar__number"> 90% </span>
               </div>
             </div>
           </div>
-          <div class="strength__list-item">
-            <div class="strength__list-item__header">
+          <div class="strength__item">
+            <p class="strength__item__header">
               <i class="fa-solid fa-laptop"></i>
-              <h2>Web Design</h2>
-            </div>
+              <span>Web Design</span>
+            </p>
             <div class="strength__skill-bar__item">
               <div class="strength__skill-bar__item--overlay overlay-2">
                 <span class="skill-bar__number"> 85% </span>
               </div>
             </div>
           </div>
-          <div class="strength__list-item">
-            <div class="strength__list-item__header">
+          <div class="strength__item">
+            <p class="strength__item__header">
               <i class="fa-solid fa-image"></i>
-              <h2>Photoshop</h2>
-            </div>
+              <span>Photoshop</span>
+            </p>
             <div class="strength__skill-bar__item">
               <div class="strength__skill-bar__item--overlay overlay-3">
                 <span class="skill-bar__number"> 75% </span>
@@ -166,5 +156,129 @@
     <section id="portfolio">
       <h1>PORTFOLIO</h1>
     </section>
+
+    <section id="my-work">
+      <div class="container">
+        <h1 class="my-work__heading">My work</h1>
+        <p class="my-work__sub-heading">
+          <em>
+            Here are some of my latest lorem work ipsum tipsum. <br />
+            Click on the images to make them bigger</em
+          >
+        </p>
+
+        <div class="grid__container">
+          <div class="grid__item">
+            <img src="./images/work-item-1.jpeg" alt="Image 1" />
+          </div>
+          <div class="grid__item">
+            <img src="./images/work-item-2.jpeg" alt="Image 2" />
+          </div>
+          <div class="grid__item">
+            <img src="./images/work-item-3.jpeg" alt="Image 3" />
+          </div>
+          <div class="grid__item">
+            <img src="./images/work-item-4.jpeg" alt="Image 4" />
+          </div>
+          <div class="grid__item">
+            <img src="./images/work-item-5.jpeg" alt="Image 5" />
+          </div>
+          <div class="grid__item">
+            <img src="./images/work-item-6.jpeg" alt="Image 6" />
+          </div>
+          <div class="grid__item">
+            <img src="./images/work-item-7.jpeg" alt="Image 7" />
+          </div>
+          <div class="grid__item">
+            <img src="./images/work-item-8.jpeg" alt="Image 8" />
+          </div>
+        </div>
+
+        <button class="my-work__button button-primary">Load More</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>CONTACT</h1>
+    </section>
+
+    <section id="where-i-work">
+      <div class="container">
+        <h1 class="where-i-work__heading">Where I work</h1>
+        <p class="where-i-work__sub-heading">
+          <em>I'd love your feedback!</em>
+        </p>
+
+        <div class="my-work__content">
+          <div class="my-work__content__image">
+            <img src="./images/map.jpeg" alt="my work" />
+          </div>
+          <div class="my-work__content__contact-form">
+            <ul class="contact-form__info-list">
+              <li class="contact-form__info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Chicago, US</span>
+              </li>
+              <li class="contact-form__info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>Phone: +00 151515</span>
+              </li>
+              <li class="contact-form__info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email: mail@mail.com</span>
+              </li>
+            </ul>
+
+            <h3 class="contact-form__title">
+              Swing by for a cup of <i class="fa-solid fa-mug-hot"></i> , or
+              leave me a note:
+            </h3>
+
+            <form id="contact-form" class="my-work__content__form">
+              <div class="form-field form-field-name">
+                <input id="name" placeholder="Name" />
+              </div>
+              <div class="form-field form-field-email">
+                <input id="email" placeholder="Email" />
+              </div>
+              <div class="form-field form-field-message">
+                <input id="message" placeholder="Message" />
+              </div>
+              <button class="button-secondary">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flex-col-container">
+        <a class="top-button" href="#carousel">
+          <i class="fa-solid fa-arrow-up"></i> To the top
+        </a>
+        <div class="footer__social-list">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-square-snapchat"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <div class="footer__copyright">
+          <span
+            >Powered by
+            <a
+              class="link-to-main-page"
+              target="_blank"
+              href="https://www.w3schools.com/w3css/default.asp"
+              >w3.css</a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
